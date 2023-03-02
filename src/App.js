@@ -38,7 +38,7 @@ function App() {
         <div>
             <img className='banner' src={require("./images/alan.jpg")} />
             <Newscards articles={newsArticles} ActiveArticles={ActiveArticles} />
-            <footer class="footer" style={{textAlign:"center",padding:20}}> Developed by Lonith Shetty,Chaitanya Mestry,Goutam Thakur,Prathamesh Dhande</footer>
+            <footer class="footer" style={{textAlign:"center",padding:20}}> Developed by Lonith Shetty,Chaitanya Mestry,Goutam Thakur & Prathamesh Dhande</footer>
         </div>
     )
 }
