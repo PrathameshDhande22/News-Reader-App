@@ -22,7 +22,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   body {
-    background-color: #212121;
+    // background-color: #212121;
+    background-image: url("images/background.jpg");
+    background-repeat: round;
     color: snow;
 
     .banner {
