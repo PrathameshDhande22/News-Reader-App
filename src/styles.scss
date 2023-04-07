@@ -24,7 +24,8 @@
   body {
     // background-color: #212121;
     background-image: url("images/background.jpg");
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: snow;
 
     .banner {
