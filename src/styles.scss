@@ -35,6 +35,21 @@
       border-radius: 2rem;
     }
 
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      position: fixed;
+      bottom: 0px;
+      padding: 20px 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      font-size: 15px;
+    }
+
     .searchTypes {
       margin: 2rem auto;
       width: 80%;

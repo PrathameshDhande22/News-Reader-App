@@ -4,17 +4,19 @@ import wordsToNumbers from "words-to-numbers";
 import Newscards from "./components/NewsCards/Newscards";
 import "./styles.scss";
 import alanimg from "./images/alan.jpg";
+import { Footer } from "./components/Footer";
 
 function App() {
   const [newsArticles, setnewsArticles] = useState([]);
   const [ActiveArticles, setActiveArticles] = useState(-1);
   const alanKey =
-    "a375ba1d8b472ed54bea7a9a5fe132bc2e956eca572e1d8b807a3e2338fdd0dc/stage";
+    "e5ba70b1dfde056059f60dbe908551b72e956eca572e1d8b807a3e2338fdd0dc/stage";
   useEffect(() => {
     alanBtn({
       key: alanKey,
       onCommand: ({ command, articles, number }) => {
-        if (command === "newHeadlines") {
+        if (command === "newsHeadlines") {
+          console.log(articles);
           setnewsArticles(articles);
           setActiveArticles(-1);
         } else if (command === "highlight") {
@@ -43,10 +45,7 @@ function App() {
     <div>
       <img className="banner" src={alanimg} alt="Alan" />
       <Newscards articles={newsArticles} ActiveArticles={ActiveArticles} />
-      <footer class="footer" style={{ textAlign: "center", padding: 20 ,color:"black"}}>
-        Developed by Lonith Shetty,Chaitanya Mestry,Goutam Thakur & Prathamesh
-        Dhande
-      </footer>
+      <Footer/>
     </div>
   );
 }
