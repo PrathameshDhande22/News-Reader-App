@@ -56,12 +56,14 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem 1rem;
+      
 
       @include tablet() {
         grid-template-columns: repeat(2, 1fr);
       }
       @include phone() {
         grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20%;
       }
 
       .item {
@@ -82,6 +84,7 @@
       justify-items: center;
       grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
+      margin-bottom: 20%;
       @include bigtablet() {
         grid-template-columns: repeat(3, 1fr);
       }
